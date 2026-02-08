@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["reshaped"],
   },
-  output: "export",
 };
 
 export default nextConfig;
