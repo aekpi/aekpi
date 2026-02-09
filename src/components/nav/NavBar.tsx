@@ -3,15 +3,15 @@ import { Button, View } from "reshaped";
 
 export function NavBar() {
   return (
-    <View direction="row" width="100%" justify="space-between">
+    <View direction="row" justify="space-between" align="center" gap={5}>
       <Image
         src="/logo_512.svg"
         height={512}
         width={512}
         alt="aekpi logo"
-        style={{ height: 50, width: 50 }}
+        style={{ height: 50, width: "auto" }}
       />
-      <Button color="primary" variant="outline">
+      <Button color="primary" variant="outline" href="/">
         Sign out
       </Button>
     </View>
