@@ -19,6 +19,7 @@
     "reshaped": "^3.9.0"
   },
   "devDependencies": {
+    "@types/gapi": "^0.0.47",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
