@@ -1,13 +1,10 @@
 import { View, Text, Grid } from "reshaped";
-import { Section } from "./Section";
-import { ID as NEXT_ID } from "./OurIndex";
+import { Section, SectionProps } from "./Section";
 import Image from "next/image";
 
-export const START_ID = "start";
-
-export function Start() {
+export function Start(sectionProps: SectionProps) {
   return (
-    <Section id={START_ID} nextId={NEXT_ID}>
+    <Section {...sectionProps}>
       <Grid
         columns={{ s: 1, l: 2 }}
         gap={4}
