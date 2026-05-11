@@ -1,19 +1,19 @@
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Button } from "reshaped";
-import { START_ID } from "./Start";
 
 interface Props {
-  nextId?: string;
+  nextId: string;
+  lastItem?: boolean;
 }
 
-export function NavButton({ nextId }: Props) {
+export function NavButton({ nextId, lastItem = false }: Props) {
   return (
     <Button
       color="media"
       variant="ghost"
-      icon={nextId ? KeyboardArrowDownIcon : KeyboardArrowUpIcon}
-      href={nextId ? `#${nextId}` : `#${START_ID}`}
+      icon={!lastItem ? KeyboardArrowDownIcon : KeyboardArrowUpIcon}
+      href={`#${nextId}`}
       size="xlarge"
     />
   );

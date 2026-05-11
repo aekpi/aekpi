@@ -1,16 +1,17 @@
 import { PropsWithChildren } from "react";
 import { View, ViewProps } from "reshaped";
 
-import { NavButton } from "./NavButton";
+import { NavButton } from "./nav/NavButton";
 
-interface Props {
-  id?: string;
-  nextId?: string;
+export interface SectionProps {
+  id: string;
+  nextId: string;
+  lastItem?: boolean;
   backgroundColor?: ViewProps["backgroundColor"];
 }
 
-export function Section(props: PropsWithChildren<Props>) {
-  const { id, nextId, children, backgroundColor } = props;
+export function Section(props: PropsWithChildren<SectionProps>) {
+  const { id, nextId, lastItem, children, backgroundColor } = props;
 
   return (
     <View
@@ -20,7 +21,7 @@ export function Section(props: PropsWithChildren<Props>) {
         id,
         style: {
           position: "relative",
-          height: "100%",
+          minHeight: "100%",
         },
       }}
       backgroundColor={backgroundColor}
@@ -45,7 +46,7 @@ export function Section(props: PropsWithChildren<Props>) {
           },
         }}
       >
-        <NavButton nextId={nextId} />
+        <NavButton nextId={nextId} lastItem={lastItem} />
       </View>
     </View>
   );
