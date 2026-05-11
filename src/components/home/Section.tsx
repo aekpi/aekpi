@@ -3,6 +3,8 @@ import { View, ViewProps } from "reshaped";
 
 import { NavButton } from "./nav/NavButton";
 
+const NAV_HEIGHT = 20;
+
 export interface SectionProps {
   id: string;
   nextId: string;
@@ -25,6 +27,7 @@ export function Section(props: PropsWithChildren<SectionProps>) {
         },
       }}
       backgroundColor={backgroundColor}
+      paddingBottom={NAV_HEIGHT}
     >
       <View
         direction="column"
@@ -41,7 +44,7 @@ export function Section(props: PropsWithChildren<SectionProps>) {
         attributes={{
           style: {
             position: "absolute",
-            bottom: 20,
+            bottom: NAV_HEIGHT,
             width: "100%",
           },
         }}
