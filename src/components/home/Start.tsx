@@ -39,9 +39,9 @@ export function Start(sectionProps: SectionProps) {
           </Text>
           <Text variant="body-3">
             By analysing <b> more than 40 data points,</b> including social
-            media, reviews, press visibility, engagement metrics, and
-            engagement, the platform delivers clear insights for smarter leasing
-            and development decisions.
+            media, reviews, press visibility, engagement metrics, the platform
+            delivers clear insights for smarter leasing and development
+            decisions.
           </Text>
         </View>
       </Grid>
