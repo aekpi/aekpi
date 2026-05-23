@@ -1,0 +1,12 @@
+.valueLevel {
+  li {
+    padding-left: 1rem 0;
+  }
+
+  p {
+    padding: 1rem 0;
+  }
+  ul {
+    list-style-position: "inside";
+  }
+}

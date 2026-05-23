@@ -3,23 +3,25 @@ import styles from "./page.module.css";
 import { IndexLevels } from "@/components/home/IndexLevels";
 import { OurIndex } from "@/components/home/OurIndex";
 import { Start } from "@/components/home/Start";
+import { Value } from "@/components/home/Value";
 
 const SECTIONS = [
   { id: "start", component: Start },
   { id: "our-index", component: OurIndex },
   { id: "index-levels", component: IndexLevels },
+  { id: "value", component: Value },
 ];
 
 export default function Home() {
   return (
     <div className={styles.container} dir="ltr">
       {SECTIONS.map(({ id, component: Section }, idx) => (
-    <Section
-      key={id}
-      id={id}
-      nextId={SECTIONS[(idx + 1) % SECTIONS.length].id}
-      lastItem={idx == SECTIONS.length - 1}
-    />
+        <Section
+          key={id}
+          id={id}
+          nextId={SECTIONS[(idx + 1) % SECTIONS.length].id}
+          lastItem={idx == SECTIONS.length - 1}
+        />
       ))}
     </div>
   );
