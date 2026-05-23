@@ -1,3 +1,8 @@
+.container {
+  scroll-snap-type: y proximity;
+  height: 100vh;
+}
+
 .card {
   margin-top: 4rem;
 }

@@ -2,6 +2,7 @@ import { PropsWithChildren } from "react";
 import { View, ViewProps } from "reshaped";
 
 import { NavButton } from "./nav/NavButton";
+import styles from "./Section.module.css";
 
 const NAV_HEIGHT = 20;
 
@@ -19,15 +20,11 @@ export function Section(props: PropsWithChildren<SectionProps>) {
     <View
       direction="column"
       justify="center"
-      attributes={{
-        id,
-        style: {
-          position: "relative",
-          minHeight: "100%",
-        },
-      }}
+      align="center"
+      attributes={{ id }}
       backgroundColor={backgroundColor}
       paddingBottom={NAV_HEIGHT}
+      className={styles.section}
     >
       <View
         direction="column"
@@ -35,6 +32,7 @@ export function Section(props: PropsWithChildren<SectionProps>) {
         justify="center"
         gap={10}
         padding={4}
+        maxWidth="90%"
       >
         {children}
       </View>
