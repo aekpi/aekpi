@@ -1,37 +1,54 @@
-import { Text, Grid } from "reshaped";
+import { Text } from "reshaped";
 import { SectionProps, Section } from "./Section";
-import { OurIndexCard } from "./OurIndexCards/OurIndexCards";
+import { OurIndexCard } from "./OurIndexCards";
+
+import SensorsIcon from "@mui/icons-material/Sensors";
+import AutoGraphIcon from "@mui/icons-material/AutoGraph";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import ExtensionIcon from "@mui/icons-material/Extension";
+import ThreePIcon from "@mui/icons-material/ThreeP";
+
+const iconProps = {
+  sx: {
+    fontSize: 80,
+  },
+};
 
 export function OurIndex(sectionProps: SectionProps) {
   return (
     <Section {...sectionProps}>
-      <Text variant="featured-1">Measure what truly creates value.</Text>
-      <Grid
-        columns={{ s: 1, l: 3 }}
-        gap={4}
-        columnGap={6}
-        rowGap={6}
-        maxWidth={300}
-      >
-        <OurIndexCard imageVariant="a">
-          The AEKPI Index measures how businesses contribute to the
-          attractiveness, identity and energy of a place. The score (1–10)
-          reflects a concept’s ability to attract visitors, strengthen the
-          surrounding ecosystem and elevate the overall perception of an area.
-        </OurIndexCard>
+      <Text variant="featured-1">We Measure What Truly Creates Value</Text>
+      <OurIndexCard icon={<SensorsIcon {...iconProps} />}>
+        Input signals are the data sources the analysis is based on. We use a
+        range of data from social media, ratings, reviews, related accounts,
+        physical traffic indicators, traditional media and cultural presence.
+      </OurIndexCard>
 
-        <OurIndexCard imageVariant="b">
-          Our Activation Value model measures the value tenants create through
-          visibility, engagement and activity. It quantifies the place-building
-          energy they contribute beyond traditional leasing metrics.
-        </OurIndexCard>
-        <OurIndexCard imageVariant="c">
-          The model compares organic activity with the cost of generating
-          similar attention through marketing and activation. The result is
-          smarter leasing decisions, stronger tenant mixes and more valuable
-          destinations.
-        </OurIndexCard>
-      </Grid>
+      <OurIndexCard icon={<AutoGraphIcon {...iconProps} />}>
+        Depending on the quality of the data we generate a Signal Strength. This
+        graph indicates where data is harvested from and the quantity from that
+        area. The Signal Strength is unique for each business and is connected
+        to their online, cultural and medial presence.
+      </OurIndexCard>
+
+      <OurIndexCard icon={<AttachMoneyIcon {...iconProps} />}>
+        Activation value is the value the business creates for other brands,
+        places and real estate companies. The activation value is delivered as
+        per month and per year.
+      </OurIndexCard>
+
+      <OurIndexCard icon={<ExtensionIcon {...iconProps} />}>
+        The index is the puzzle piece that clearly puts a concept or business in
+        the context of the area. This gives placemakers and developers a
+        powerful tool to design the area.
+      </OurIndexCard>
+
+      <OurIndexCard icon={<ThreePIcon {...iconProps} />}>
+        Data is not everything, our analysis always comes with an expert
+        commentary to provide some background to the data and helps explain the
+        soft values the business contributes and how it fits to a strategy and
+        place identity.
+      </OurIndexCard>
     </Section>
   );
 }

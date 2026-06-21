@@ -1,0 +1,21 @@
+.nav {
+  position: fixed;
+  display: flex;
+  z-index: 9;
+  top: 10px;
+  width: 100%;
+  padding: 1em 2em;
+}
+
+.links {
+  display: flex;
+  gap: 1em;
+  flex-grow: 1;
+  justify-content: end;
+}
+
+.link {
+  color: #efefef !important;
+  font-size: larger;
+  font-weight: 600;
+}

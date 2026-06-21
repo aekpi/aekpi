@@ -1,6 +1,7 @@
-import { View, Text, Grid } from "reshaped";
+import { View, Text, Grid, Button } from "reshaped";
 import { Section, SectionProps } from "./Section";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Start(sectionProps: SectionProps) {
   return (
@@ -43,6 +44,15 @@ export function Start(sectionProps: SectionProps) {
             delivers clear insights for smarter leasing and development
             decisions.
           </Text>
+
+          <Text variant="body-2" weight="bold">
+            Curious to learn more?
+          </Text>
+          <View maxWidth={200}>
+            <Link href="/contact">
+              <Button color="primary">Contact Us</Button>
+            </Link>
+          </View>
         </View>
       </Grid>
     </Section>
