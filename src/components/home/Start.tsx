@@ -28,21 +28,17 @@ export function Start(sectionProps: SectionProps) {
             Data Driven Decision Support for Ground Floor Strategy
           </Text>
           <Text variant="body-3">
-            Our analytics platform combines
-            <b>
-              {" "}
-              more than 50 years of experience in leasing, placemaking, retail,
-              and HoReCa
-            </b>{" "}
-            to help property owners identify tenants that create long-term value
-            beyond rent. but by attracting people, strengthening place identity,
-            and driving activity.
+            AEKPI is a data intelligence platform that helps property owners,
+            investors, and municipalities identify the tenants, brands, and
+            operators that create long-term value beyond traditional real estate
+            metrics.
           </Text>
+
           <Text variant="body-3">
-            By analysing <b> more than 40 data points,</b> including social
-            media, reviews, press visibility, engagement metrics, the platform
-            delivers clear insights for smarter leasing and development
-            decisions.
+            Built on decades of experience in leasing, placemaking, retail,
+            hospitality, and analytics, AEKPI helps stakeholders create stronger
+            destinations, more resilient portfolios, and places people genuinely
+            want to be part of.
           </Text>
 
           <Text variant="body-2" weight="bold">
