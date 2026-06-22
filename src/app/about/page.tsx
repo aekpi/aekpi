@@ -1,29 +1,32 @@
 import { PageContainer } from "@/components/PageContainer";
-import { View, Text } from "reshaped";
+import { View, Text, Grid } from "reshaped";
+import Image from "next/image";
+
+import CarMeet from "./images/carmeet.png";
 
 export default function About() {
   return (
     <PageContainer>
       <View gap={4}>
         <Text variant="featured-1" align="center">
-          Why I Started AEKPI
+          About AEKPI
         </Text>
         <Text variant="body-1">
-          AEKPI started with an observation I kept coming back to throughout my
-          career. Some of the businesses creating the greatest value for a place
-          are often the ones creating the least measurable value in traditional
-          real estate models. The café that makes people choose a particular
-          office. The niche retailer that turns an ordinary street into a
-          destination. The local entrepreneur who creates community, identity
-          and movement. The operator that attracts visitors, generates
-          visibility and strengthens every surrounding business.
+          AEKPI was founded on a simple observation: some of the businesses that
+          create the greatest value for a place often create the least
+          measurable value in traditional real estate models.
           <br />
-          I saw these businesses changing neighborhoods, attracting talent,
-          increasing footfall and creating stories people wanted to be part of.
-          Yet when leasing decisions were made, these contributions were rarely
-          visible in the spreadsheets.
+          The café that influences where people choose to work. The independent
+          retailer that transforms an ordinary street into a destination. The
+          local entrepreneur who creates community, identity and movement. The
+          operator that attracts visitors, generates visibility and strengthens
+          surrounding businesses.
           <br />
-          That led me to a simple question:
+          These actors shape neighborhoods, attract talent, increase footfall
+          and create experiences people want to be part of. Yet their
+          contribution is rarely reflected in the metrics used to guide leasing,
+          investment and development decisions. <br />
+          This led to a fundamental question:
         </Text>
         <Text
           variant="featured-3"
@@ -31,41 +34,57 @@ export default function About() {
           attributes={{ style: { padding: 20 } }}
         >
           <i>
-            What if we could create a shared economic language between property
-            owners, municipalities and tenants? A framework where cultural
-            value, social influence and place-making impact could be measured,
-            understood and incorporated into commercial decision-making.
+            What if property owners, municipalities and tenants could share a
+            common economic language for measuring the value of place?
           </i>
         </Text>
+      </View>
+      <View align="center" gap={4} paddingTop={20}>
+        <Grid columns={{ s: 1, l: 2 }} columnGap={6} rowGap={6} align="center">
+          <Image
+            src={CarMeet}
+            sizes="100vw"
+            style={{ width: "100%", height: "auto" }}
+            alt="A modern city square"
+          />
+          <View gap={3} justify="center">
+            <Text variant="body-2">
+              A language capable of quantifying cultural capital, social
+              influence, activation value and destination potential alongside
+              traditional financial metrics. <br />
+              To answer that question, AEKPI brought together expertise from
+              urban development, destination building, festivals and events,
+              placemaking, marketing, software development, artificial
+              intelligence and advanced data analytics. <br />
+              United by a shared belief that a critical gap has existed for too
+              long, the team set out to build a framework that connects the
+              social and cultural forces that shape places with the economic
+              realities that finance them. <br />
+              Cities are built by people, culture and experiences. Real estate
+              is financed through economics. Too often, these worlds operate
+              independently. AEKPI was created to bridge that gap. By measuring
+              and visualizing the impact that businesses, concepts and operators
+              have on places, AEKPI enables municipalities, property owners,
+              investors and leasing teams to make more informed decisions about
+              how destinations evolve and where value is created.
+            </Text>
+          </View>
+        </Grid>
+      </View>
+      <View paddingTop={15}>
         <Text variant="body-1">
-          To bring the idea to life, I brought together a team with backgrounds
-          in urban development, festivals and events, destination building,
-          activation, marketing, software development, artificial intelligence
-          and data analysis. What united us was a belief that a gap has existed
-          for far too long. Cities are built by people, culture and experiences.
-          Real estate is financed through economics. <br />
-          Too often, those worlds operate separately. We believe they should
-          work together. AEKPI was created to quantify the impact that
-          businesses, concepts and operators have on places. <br />
-          By measuring cultural capital, social influence, activation value and
-          destination potential, we help municipalities, property owners and
-          leasing teams make better decisions about how places evolve.
-        </Text>
-        <Text variant="body-1">
-          <b>My vision is simple.</b> <br />I want to give the industry the
-          tools to build places with personality. Places where local
-          entrepreneurs coexist with global brands. Places where culture and
-          commerce strengthen each other.
-        </Text>
-        <Text variant="body-1">
-          Places where the value of community, creativity and identity is
-          understood not only emotionally, but economically. By creating
-          transparency around these values, AEKPI helps align the ambitions of
+          The company’s mission is to provide the industry with the tools needed
+          to build places with character and long-term relevance. Places where
+          local entrepreneurs coexist with global brands. Places where culture
+          and commerce reinforce one another. Places where the value of
+          community, creativity and identity is understood not only emotionally,
+          but economically. By creating transparency around these
+          often-overlooked drivers of value, AEKPI helps align the ambitions of
           municipalities, property owners, investors and operators around a
-          shared goal: building places people genuinely want to be part of.
-          Because I believe the most valuable square meters of the future will
-          not be defined by what is built on them — but by the life they create
-          around them.
+          common objective: creating destinations that people genuinely want to
+          visit, work in and belong to. Because the most valuable square meters
+          of the future will not be defined solely by what is built on them, but
+          by the life they create around them.
         </Text>
       </View>
     </PageContainer>

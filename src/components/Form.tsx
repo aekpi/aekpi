@@ -45,7 +45,11 @@ export function Form() {
         >
           <View gap={4}>
             <Text variant="body-2" attributes={{ style: { minWidth: 400 } }}>
-              Please use this form to contact us
+              Get in touch to schedule a meeting and discover how AEKPI can help
+              your real estate company gain deeper insights into your portfolio,
+              identify hidden opportunities, and unlock greater asset value.
+              Together, we turn data into actionable strategies that drive
+              smarter decisions and stronger returns.
             </Text>
 
             <TextField
