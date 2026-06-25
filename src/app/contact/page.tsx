@@ -10,7 +10,7 @@ export default function Contact() {
     <PageContainer>
       <View gap={4}>
         <Text variant="featured-1" align="center">
-          Get in Touch with Us
+          Start the Conversation
         </Text>
       </View>
 
@@ -24,6 +24,20 @@ export default function Contact() {
           />
           <View direction="column" gap={4}>
             <Form />
+            <Text variant="body-3" color="disabled">
+              <b>Address</b>
+              <br />
+              AEKPI Langen
+              <br />
+              Ljusslingan 32
+              <br />
+              12064 Stockholm
+            </Text>
+            <Text variant="body-3" color="disabled">
+              <b>Contact</b>
+              <br />
+              hello@aekpi.se
+            </Text>
           </View>
         </Grid>
       </View>

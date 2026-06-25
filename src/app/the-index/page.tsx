@@ -74,16 +74,17 @@ export default function TheIndex() {
             <Text variant="featured-2">AEKPI Index</Text>
             <Text variant="body-2">
               A score between 1-10 that measures how attractive and influential
-              a business is as a place-building operator. The index reflects a
+              a business is as a place building operator. The index reflects a
               concept&apos;s ability to attract visitors, strengthen the
               surrounding ecosystem and elevate the overall perception of the
               area. <br />
               The AEKPI Index is designed to help property owners,
               municipalities and leasing teams make smarter and faster decisions
-              around tenant mix, place identity and long-term value creation.
-            </Text>
-            <Text variant="body-2">
+              around tenant mix, place identity and long term value creation.
+              <br />
               This makes it possible to clearly understand:
+            </Text>
+            <Text variant="body-2" weight="bold">
               <ul style={{ listStylePosition: "inside" }}>
                 <li>what is missing in a shopping center or district</li>
                 <li>
@@ -95,11 +96,7 @@ export default function TheIndex() {
                 </li>
                 <li>which tenants strengthen surrounding businesses</li>
                 <li>
-                  which locations should prioritize activation over maximum
-                  short-term rent
-                </li>
-                <li>
-                  where premium-paying tenants can benefit from surrounding
+                  where premium paying tenants can benefit from surrounding
                   energy and traffic
                 </li>
               </ul>
@@ -119,15 +116,14 @@ export default function TheIndex() {
             <Text variant="body-2">
               Activation Value measures more than just social media exposure. It
               captures the combined value of:
+            </Text>
+            <Text variant="body-2" weight="bold">
               <ul style={{ listStylePosition: "inside" }}>
                 <li>digital reach and engagement</li>
-                <li>customer-generated content</li>
+                <li>customer generated content</li>
                 <li>events and physical activity</li>
                 <li>reviews and public reputation</li>
-                <li>
-                  Which locations should prioritize activation over maximum
-                  short-term rent
-                </li>
+                <li>co-branding awareness</li>
               </ul>
             </Text>
             <Text variant="body-2">
@@ -138,9 +134,9 @@ export default function TheIndex() {
               the area.
             </Text>
             <Text variant="body-2">
-              In other words, activation value quantifies how much
-              place-building energy a tenant contributes that the property owner
-              would otherwise need to invest in themselves
+              In other words, activation value quantifies how much place
+              building energy a tenant contributes that the property owner would
+              otherwise need to invest in themselves
             </Text>
           </View>
           <Image
@@ -180,7 +176,7 @@ export default function TheIndex() {
           />
           <ResultPoint
             icon={<TrendingUpIcon />}
-            text="Higher long-term rental performance"
+            text="Higher long term rental performance"
           />
           <ResultPoint
             icon={<LocationCityIcon />}
@@ -191,7 +187,7 @@ export default function TheIndex() {
 
       <View paddingTop={15}>
         <Text variant="featured-3" align="center">
-          AEKPI bridges the gap between culture and commerce — turning
+          AEKPI bridges the gap between culture and commerce. We turn
           place-making into a measurable and scalable business strategy.
         </Text>
       </View>
