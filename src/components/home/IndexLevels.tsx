@@ -25,17 +25,17 @@ export function IndexLevels(sectionProps: SectionProps) {
           autoFlow="row"
         >
           <Level title="10 – Global Destination">
-            A once-in-a-generation concept. A business that can operate anywhere
-            — even in isolation — and still attract visitors from across the
-            world. It defines the place rather than being defined by it. A true
-            landmark that reshapes entire districts.
+            A once-in-a-generation concept. A business that can operate
+            anywhere, even in isolation, and still attract visitors from across
+            the world. It defines the place rather than being defined by it. A
+            true landmark that reshapes entire districts.
           </Level>
 
           <Level title="9 – Iconic Magnet">
-            A once-in-a-generation concept. A business that can operate anywhere
-            — even in isolation — and still attract visitors from across the
-            world. It defines the place rather than being defined by it. A true
-            landmark that reshapes entire districts.
+            A powerful, status-elevating concept capable of thriving in an
+            unconventional or off-location setting. It draws people on its own
+            and significantly strengthens the brand and perception of the
+            surrounding area.
           </Level>
 
           <Level title="8 – Recognized Anchor">

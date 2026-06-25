@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "aekpi - Replace Discounts with Shared Incentives",
+  title: "aekpi - Data Driven Decision Support for Ground Floor Strategy",
   description: "Coming soon",
 };
 
